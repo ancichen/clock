@@ -1,5 +1,5 @@
 # 定时打卡
-## 项目介绍
+## 项目介绍 
 用于某学校一天四次的的微信打卡，使用 GitHub Actions 定时运行，无需vps。此程序的正常运行需要部分参数，其中的 BOT_TOBKEN 和 CHAT_ID 用于 telegram 机器人提醒，不需要此功能可以不设定这两个 secrets。如果不设定只能在项目的 Actions 页面查看运行结果，即时性较差。所有的 secrets 都是字符串，无需前后引号。其中的 UUKEY 和 EAISESS 字段需要使用 Fiddler 对微信网页进行抓包，获取自己的 cookies 以正常登录和提交数据。此Actions每日8:30，12:30，20:30各运行一次。
 ## secrets及定义
 - BOT_TOKEN: telegram bot token, 用于telegram提醒
